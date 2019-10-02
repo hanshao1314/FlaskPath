@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    空表
+{% endblock %}
+
+{% block content %}
+    <script src="/static/vendor/jquery/jquery.js"></script>
+    <script>
+    $.ajax(
+        {
+            url:"/Api/leave/",
+            type:"get",
+            data:"",
+            success:function (data) {
+                console.log(data)
+            },
+            error:function (error) {
+                console.log(error)
+            }
+        }
+    )
+    </script>
+{% endblock %}

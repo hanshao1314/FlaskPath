@@ -43,7 +43,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="/userInfo/">
+        <a class="nav-link" href="/userinfo/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>个人中心</span></a>
       </li>
@@ -64,12 +64,43 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <h6 class="collapse-header">考勤列表</h6>
+            <a class="collapse-item" href="/holiday_leave/">请假申请</a>
+            <a class="collapse-item" href="/leave_list/">考勤统计</a>
+            <a class="collapse-item" href="#">违纪情况</a>
           </div>
         </div>
       </li>
+
+
+
+          <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>考勤管理(升级版)</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+           <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+            <a class="collapse-item" href="#">基础设置</a>
+            <a class="collapse-item" href="#">档案管理</a>
+            <a class="collapse-item" href="#">招聘管理</a>
+            <a class="collapse-item" href="#">培训管理</a>
+            <a class="collapse-item" href="#">劳动关系</a>
+            <a class="collapse-item" href="#">考勤管理</a>
+            <a class="collapse-item" href="#">工作考核</a>
+            <a class="collapse-item" href="#">假期管理</a>
+            <a class="collapse-item" href="#">加班管理</a>
+            <a class="collapse-item" href="#">薪酬管理</a>
+          </div>
+        </div>
+      </li>
+
+
+
+
+
+
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
@@ -79,11 +110,13 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <h6 class="collapse-header">课程管理</h6>
+            <a class="collapse-item" href="#">班级管理</a>
+            <a class="collapse-item" href="#">基础设置</a>
+            <a class="collapse-item" href="#">录入模块</a>
+            <a class="collapse-item" href="#">查询模块</a>
+            <a class="collapse-item" href="#">删除模块</a>
+            <a class="collapse-item" href="#">修改模块</a>
           </div>
         </div>
       </li>
@@ -92,15 +125,24 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>考试系统</span>
+          <span>考试管理</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <h6 class="collapse-header">考试管理</h6>
+            <a class="collapse-item" href="#">试卷管理</a>
+            <a class="collapse-item" href="#">成绩统计</a>
+            <a class="collapse-item" href="#">题库管理</a>
+            <a class="collapse-item" href="#">在线考试</a>
+            <a class="collapse-item" href="#">试卷管理</a>
+            <a class="collapse-item" href="#">考试管理</a>
+            <a class="collapse-item" href="#">手工评卷</a>
+            <a class="collapse-item" href="#">成绩管理</a>
+            <a class="collapse-item" href="#">过程监控</a>
+            <a class="collapse-item" href="#">练习管理</a>
+            <a class="collapse-item" href="#">竞赛管理</a>
+            <a class="collapse-item" href="#">错题管理</a>
+            <a class="collapse-item" href="#">统计报表</a>
           </div>
         </div>
       </li>
@@ -109,9 +151,9 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
+        <!-- Heading -->
       <div class="sidebar-heading">
-        Addons
+        通知系统
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
@@ -122,9 +164,27 @@
         </a>
         <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
+
+              <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">通知类型:</h6>
+                    <a class="collapse-item" href="/add_task/">教学任务发布</a>
+                    <a class="collapse-item" href="#">放假通知</a>
+                    <a class="collapse-item" href="#">其他通知</a>
+                    <a class="collapse-item" href="#">系统管理</a>
+                    <a class="collapse-item" href="#">模块管理</a>
+                    <a class="collapse-item" href="#">角色管理</a>
+                    <a class="collapse-item" href="#">系统设置</a>
+                    <a class="collapse-item" href="#">分机构管理</a>
+                    <a class="collapse-item" href="#">部门管理</a>
+                    <a class="collapse-item" href="#">岗位管理</a>
+                    <a class="collapse-item" href="#">用户管理</a>
+                    <a class="collapse-item" href="#">在线用户管理</a>
+                    <a class="collapse-item" href="#">版本升级</a>
+                </div>
+              </div>
+
+            <a class="collapse-item" href="register.html">资讯管理</a>
             <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
@@ -336,7 +396,7 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="/login/" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
@@ -414,5 +474,7 @@
   <script src="/static/js/sb-admin-2.min.js"></script>
 
 </body>
+{% block script %}
 
+{% endblock %}
 </html>

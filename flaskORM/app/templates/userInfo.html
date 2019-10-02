@@ -1,0 +1,123 @@
+{% extends 'base.html'%}
+
+{%block title%}
+    个人中心
+{%endblock%}
+
+{%block label%}
+    个人中心
+{%endblock%}
+
+{%block content%}
+    <!--个人详情-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">个人详情</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                     <tr >
+                         <td rowspan="3"><img style="width: 150px;height: 150px;" src="/static/img/1.jpg"></td>
+                         <th>姓名</th>
+                         <td>韩少</td>
+                         <th>性别</th>
+                         <td>男</td>
+                         <th>年龄</th>
+                         <td>30</td>
+                     </tr>
+                     <tr>
+                         <th>身高</th>
+                         <td>175</td>
+                         <th>体重</th>
+                         <td>160</td>
+                         <th>民族</th>
+                         <td>汉族</td>
+                     </tr>
+                     <tr>
+                         <th>身份</th>
+                         <td>学员</td>
+                         <th>科目</th>
+                         <td>Python</td>
+                         <th>阶段</th>
+                         <td>全栈开发</td>
+                     </tr>
+                      <tr>
+                         <th>电话</th>
+                         <td>110</td>
+                         <th>邮箱</th>
+                         <td>hanshaohs@qq.com</td>
+                         <th>户籍</th>
+                         <td>北京市朝阳区五方桥</td>
+                         <th>备注</th>
+                     </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--学员管理-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">课程表</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                            <th>星期六</th>
+                            <th>星期日</th>
+                        </tr>
+                        {%for w in calendar%}
+                            <tr>
+                                {%for d in w%}
+                                <td>{{d}}</td>
+                                {%endfor%}
+                            </tr>
+                        {%endfor%}
+                    </table>
+                </tr>
+            </div>
+            </div>
+        </div>
+    </div>
+
+            <!--日常消费-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">日常消费</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                            <th>星期六</th>
+                            <th>星期日</th>
+                        </tr>
+                        {%for w in calendar%}
+                            <tr>
+                                {%for d in w%}
+                                <td>{{d}}</td>
+                                {%endfor%}
+                            </tr>
+                        {%endfor%}
+                    </table>
+                </tr>
+            </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}
